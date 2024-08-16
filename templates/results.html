@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Processing Complete</h1>
+    <p>Your video is ready:</p>
+    <video controls>
+        <source src="{{ url_for('static', filename='video_final.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

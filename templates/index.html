@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload Video and Audio</h1>
+    <form action="{{ url_for('upload_files') }}" method="post" enctype="multipart/form-data">
+        <label for="video">Select Video File:</label>
+        <input type="file" name="video" id="video" required><br><br>
+        <label for="audio">Select Audio File:</label>
+        <input type="file" name="audio" id="audio" required><br><br>
+        <input type="submit" value="Upload and Process">
+    </form>
+</body>
+</html>

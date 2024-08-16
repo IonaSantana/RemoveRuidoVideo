@@ -1,0 +1,7 @@
+Flask
+moviepy
+numpy
+scipy
+noisereduce
+pydub
+gunicorn
