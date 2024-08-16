@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
-from your_module import AudioVideoProcessor  # Substitua 'your_module' pelo nome real do módulo
+from audioprocessor import AudioVideoProcessor 
 
 app = Flask(__name__)
 
